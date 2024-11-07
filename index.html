@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- loadpage -->
+
+<body class="loadpage">
+    <div class="pagesideline pagesideline__left">
+        <a href="#" class="leftlogo">
+            <img src="img/main/leftlogo.png" alt="logo">
+        </a>
+        <ul class="leftsoclist">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="img/general/instagram-ic.png" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="img/general/fb-ic.png" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="img/general/yt-ic.png" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="img/general/ln-ic.png" alt="instagram">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="pagesideline pagesideline__right">
+        <ul class="languagelist">
+            <li><a href="#">En</a></li>
+            <li><a href="#">AR</a></li>
+            <li><a href="#">RU</a></li>
+        </ul>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="headerwrapper">
+                <nav>
+                    <ul>
+                        <li><a href="#">Property</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__bottombox">
+                    <ul class="languagelist">
+                        <li><a href="#">En</a></li>
+                        <li><a href="#">AR</a></li>
+                        <li><a href="#">RU</a></li>
+                    </ul>
+                    <ul class="leftsoclist">
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="img/general/instagram-ic.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="img/general/fb-ic.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="img/general/yt-ic.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="img/general/ln-ic.png" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__mobelems">
+                <a href="#" class="header__logo">
+                    <img src="img/general/logo-black.png" alt="logo">
+                </a>
+                <button class="burger"><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="welcomesection">
+            <div class="containersect">
+                <div class="imgwrap">
+                    <img src="img/main/heroimg.png" alt="img">
+                </div>
+            </div>
+            <a href="#scrollsect" class="welcomesection__scrollarr">
+                <img src="img/general/scroll-arrow.svg" alt="img">
+            </a>
+        </div>
+
+        <div class="filter-sectionwrap" id="scrollsect">
+            <div class="container">
+                <div class="filter-section">
+                    <div class="filter-section__header">
+                        <ul>
+                            <li><button class="active">Buy</button></li>
+                            <li><button>Rent</button></li>
+                            <li><button>Off-plan</button></li>
+                            <li><button>Sold</button></li>
+                        </ul>
+                    </div>
+                    <div class="filter-section__body">
+                        <div class="filter__searchboxwrap">
+                            <div class="filter__searchbox">
+                                <input type="text" placeholder="Search properties">
+                                <img class="search-ic" src="img/general/search.svg" alt="img">
+                            </div>
+                        </div>
+                        <div class="fscontent">
+                            <div class="fscontent__type">
+                                <div class="styledselect__wrap">
+                                    <select name="" id="" class="styledselect" data-placeholder="Type">
+                                        <option></option>
+                                        <option value="1">Any</option>
+                                        <option value="2">Apartment</option>
+                                        <option value="3">Villa</option>
+                                        <option value="4">Townhouse</option>
+                                        <option value="5">Penthouse</option>
+                                        <option value="6">Townhouse</option>
+                                        <option value="7">Duplex</option>
+                                        <option value="8">Retail</option>
+                                        <option value="9">Office</option>
+                                        <option value="10">Compound</option>
+                                        <option value="11">Full floor</option>
+                                        <option value="12">Half floor</option>
+                                        <option value="13">Whole building</option>
+                                        <option value="14">land</option>
+                                        <option value="15">Labour camp</option>
+                                        <option value="16">Clinic</option>
+                                        <option value="17">Factory</option>
+                                        <option value="18">Hotel</option>
+                                        <option value="19">Warehouse</option>
+                                        <option value="20">Gymnasium</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="fscontent__bb">
+                                <p class="selecteltext">Beds & baths</p>
+                                <div class="ddmenu">
+                                    <div class="labksbox">
+                                        <p class="title">Beds</p>
+                                        <div class="bb-labels">
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio11">
+                                                <label for="radio11">Any</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio12">
+                                                <label for="radio12">Studio</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio13">
+                                                <label for="radio13">1</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio14">
+                                                <label for="radio14">2</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio15">
+                                                <label for="radio15">3</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio16">
+                                                <label for="radio16">4</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio17">
+                                                <label for="radio17">5</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio18">
+                                                <label for="radio18">6</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="l" id="radio19">
+                                                <label for="radio19">7+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="labksbox">
+                                        <p class="title">Baths</p>
+                                        <div class="bb-labels">
+                                            <div class="bb-label">
+                                                <input type="radio" name="2" id="radio21">
+                                                <label for="radio21">Any</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="2" id="radio22">
+                                                <label for="radio22">1</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="2" id="radio23">
+                                                <label for="radio23">3</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="2" id="radio24">
+                                                <label for="radio24">3</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="2" id="radio25">
+                                                <label for="radio25">4</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="2" id="radio26">
+                                                <label for="radio26">5</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="2" id="radio27">
+                                                <label for="radio27">6</label>
+                                            </div>
+                                            <div class="bb-label">
+                                                <input type="radio" name="2" id="radio28">
+                                                <label for="radio28">7+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fscontent__price">
+                                <p class="selecteltext">Price</p>
+                                <div class="ddmenu price">
+                                    <div class="ddprce-col">
+                                        <p class="title">Min price</p>
+                                        <div class="inputfield">
+                                            <input type="number">
+                                            <span>AED</span>
+                                        </div>
+                                        <button class="reset">
+                                            Reset
+                                        </button>
+                                    </div>
+                                    <div class="ddprce-col">
+                                        <p class="title">Max price</p>
+                                        <div class="inputfield">
+                                            <input type="number">
+                                            <span>AED</span>
+                                        </div>
+                                        <button class="apply">
+                                            Apply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fscontent__loc">
+                                <p>
+                                    <img src="img/general/loc-icon.svg" alt="img">
+                                    Location
+                                </p>
+                            </div>
+                            <div class="fscontent__btn">
+                                <input type="submit" value="Search">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="objects-section">
+            <div class="container">
+                <p class="titlesect">Popular property</p>
+                <div class="objects-section__sortrow">
+                    <p>1100 objects</p>
+                    <div class="poppropselect">
+                        <select name="" id="" class="styledselect" data-placeholder="">
+                            <option value="1">Newest first</option>
+                            <option value="2">Oldest first</option>
+                            <option value="3">Highest price</option>
+                            <option value="4">Lowest prices</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <a href="#" class="objectcard">
+                            <img src="img/main/objectpic1.jpg" alt="img">
+                            <div class="objectcard__info">
+                                <div class="objectcard__info-header">
+                                    <p class="title">AED 3,000,000</p>
+                                    <p>Marina Mansions, Dubai Marina</p>
+                                </div>
+                                <div class="objectcard__info-body">
+                                    <div class="descrbox descrbox__beds">
+                                        <p>
+                                            <span>3</span>
+                                            Beds
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__baths">
+                                        <p>
+                                            <span>3</span>
+                                            Baths
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__price">
+                                        <p>
+                                            <span>3,999</span>
+                                            Sq.Ft
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__type">
+                                        <p>Apartment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <a href="#" class="objectcard">
+                            <img src="img/main/objectpic2.jpg" alt="img">
+                            <div class="objectcard__info">
+                                <div class="objectcard__info-header">
+                                    <p class="title">AED 3,000,000</p>
+                                    <p>Marina Mansions, Dubai Marina</p>
+                                </div>
+                                <div class="objectcard__info-body">
+                                    <div class="descrbox descrbox__beds">
+                                        <p>
+                                            <span>3</span>
+                                            Beds
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__baths">
+                                        <p>
+                                            <span>3</span>
+                                            Baths
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__price">
+                                        <p>
+                                            <span>3,999</span>
+                                            Sq.Ft
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__type">
+                                        <p>Apartment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <a href="#" class="objectcard">
+                            <img src="img/main/objectpic3.jpg" alt="img">
+                            <div class="objectcard__info">
+                                <div class="objectcard__info-header">
+                                    <p class="title">AED 3,000,000</p>
+                                    <p>Marina Mansions, Dubai Marina</p>
+                                </div>
+                                <div class="objectcard__info-body">
+                                    <div class="descrbox descrbox__beds">
+                                        <p>
+                                            <span>3</span>
+                                            Beds
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__baths">
+                                        <p>
+                                            <span>3</span>
+                                            Baths
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__price">
+                                        <p>
+                                            <span>3,999</span>
+                                            Sq.Ft
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__type">
+                                        <p>Apartment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <a href="#" class="objectcard">
+                            <img src="img/main/objectpic4.jpg" alt="img">
+                            <div class="objectcard__info">
+                                <div class="objectcard__info-header">
+                                    <p class="title">AED 3,000,000</p>
+                                    <p>Marina Mansions, Dubai Marina</p>
+                                </div>
+                                <div class="objectcard__info-body">
+                                    <div class="descrbox descrbox__beds">
+                                        <p>
+                                            <span>3</span>
+                                            Beds
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__baths">
+                                        <p>
+                                            <span>3</span>
+                                            Baths
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__price">
+                                        <p>
+                                            <span>3,999</span>
+                                            Sq.Ft
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__type">
+                                        <p>Apartment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <a href="#" class="objectcard">
+                            <img src="img/main/objectpic4.jpg" alt="img">
+                            <div class="objectcard__info">
+                                <div class="objectcard__info-header">
+                                    <p class="title">AED 3,000,000</p>
+                                    <p>Marina Mansions, Dubai Marina</p>
+                                </div>
+                                <div class="objectcard__info-body">
+                                    <div class="descrbox descrbox__beds">
+                                        <p>
+                                            <span>3</span>
+                                            Beds
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__baths">
+                                        <p>
+                                            <span>3</span>
+                                            Baths
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__price">
+                                        <p>
+                                            <span>3,999</span>
+                                            Sq.Ft
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__type">
+                                        <p>Apartment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <a href="#" class="objectcard">
+                            <img src="img/main/objectpic3.jpg" alt="img">
+                            <div class="objectcard__info">
+                                <div class="objectcard__info-header">
+                                    <p class="title">AED 3,000,000</p>
+                                    <p>Marina Mansions, Dubai Marina</p>
+                                </div>
+                                <div class="objectcard__info-body">
+                                    <div class="descrbox descrbox__beds">
+                                        <p>
+                                            <span>3</span>
+                                            Beds
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__baths">
+                                        <p>
+                                            <span>3</span>
+                                            Baths
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__price">
+                                        <p>
+                                            <span>3,999</span>
+                                            Sq.Ft
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__type">
+                                        <p>Apartment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <a href="#" class="objectcard">
+                            <img src="img/main/objectpic2.jpg" alt="img">
+                            <div class="objectcard__info">
+                                <div class="objectcard__info-header">
+                                    <p class="title">AED 3,000,000</p>
+                                    <p>Marina Mansions, Dubai Marina</p>
+                                </div>
+                                <div class="objectcard__info-body">
+                                    <div class="descrbox descrbox__beds">
+                                        <p>
+                                            <span>3</span>
+                                            Beds
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__baths">
+                                        <p>
+                                            <span>3</span>
+                                            Baths
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__price">
+                                        <p>
+                                            <span>3,999</span>
+                                            Sq.Ft
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__type">
+                                        <p>Apartment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <a href="#" class="objectcard">
+                            <img src="img/main/objectpic1.jpg" alt="img">
+                            <div class="objectcard__info">
+                                <div class="objectcard__info-header">
+                                    <p class="title">AED 3,000,000</p>
+                                    <p>Marina Mansions, Dubai Marina</p>
+                                </div>
+                                <div class="objectcard__info-body">
+                                    <div class="descrbox descrbox__beds">
+                                        <p>
+                                            <span>3</span>
+                                            Beds
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__baths">
+                                        <p>
+                                            <span>3</span>
+                                            Baths
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__price">
+                                        <p>
+                                            <span>3,999</span>
+                                            Sq.Ft
+                                        </p>
+                                    </div>
+                                    <div class="descrbox descrbox__type">
+                                        <p>Apartment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="loadmore">
+                        Load more
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contactsection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="contactsection__left">
+                            <p class="title">
+                                Contact Us
+                            </p>
+                            <p>
+                                Get in touch for tailored guidance from our expert team. We’re committed to assisting
+                                you through each phase of your journey.
+                            </p>
+                            <ul>
+                                <li>
+                                    <div class="imgwrap">
+                                        <img src="img/general/tel-ic.svg" alt="icon">
+                                    </div>
+                                    <div class="rightinfo">
+                                        <p>Phone</p>
+                                        <a href="tel:+4900000000">+4900000000</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="imgwrap">
+                                        <img src="img/general/email-ic.svg" alt="icon">
+                                    </div>
+                                    <div class="rightinfo">
+                                        <p>Email</p>
+                                        <a href="mailto:SBRE@gmail.com">SBRE@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="imgwrap">
+                                        <img src="img/general/viber-ic.svg" alt="icon">
+                                    </div>
+                                    <div class="rightinfo">
+                                        <p>What'sApp</p>
+                                        <a href="#">Click to message</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contactsection__right">
+                            <div class="formdark">
+                                <form action="#">
+                                    <div class="inputfield">
+                                        <label for="name">Name</label>
+                                        <input type="text" placeholder="Name" id="name">
+                                    </div>
+                                    <div class="inputfield">
+                                        <label for="email">Email</label>
+                                        <input type="email" placeholder="Email" id="email">
+                                    </div>
+                                    <div class="inputfield">
+                                        <label for="tel">Phone</label>
+                                        <input type="number" placeholder="Phone" id="tel">
+                                    </div>
+                                    <div class="inputfield">
+                                        <label for="message">Message</label>
+                                        <textarea placeholder="Write your message here" id="message"></textarea>
+                                    </div>
+                                    <input type="submit" value="Submit" class="submbtn">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <a href="#" class="footer__logo">
+                <img src="img/general/footer-logo.svg" alt="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/general/foot-ic1.png" alt="img">
+                        <img src="img/general/foot-ich1.png" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/general/foot-ic2.png" alt="img">
+                        <img src="img/general/foot-ich2.png" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/general/foot-ic3.png" alt="img">
+                        <img src="img/general/foot-ich3.png" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/general/foot-ic4.png" alt="img">
+                        <img src="img/general/foot-ich4.png" alt="img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__center">
+            <ul class="footermenu">
+                <li><a href="#">Property</a></li>
+                <li><a href="#">media</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer__right">
+            <p class="title">Subscribe to our newsletter</p>
+            <form action="#" class="footform">
+                <input type="text" placeholder="Email" class="footform__mail">
+                <input type="submit" value="Subscribe" class="footform__submit">
+            </form>
+
+        </div>
+    </footer>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/select2.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
