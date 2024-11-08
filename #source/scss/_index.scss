@@ -468,7 +468,7 @@
     background: #fff;
     border-radius: 0 0 10px 10px;
     position: absolute;
-    top: 32px;
+    top: 48px;
     left: 0;
     box-shadow: 0 7px 12px rgba(#000, 0.3);
     width: 280px;
@@ -496,9 +496,9 @@
     @include h6;
     position: relative;
     color: var(--primary);
-    height: 28px;
+    min-height: 28px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
     max-width: 100%;
     flex: 0 0 100%;
@@ -635,6 +635,11 @@
             display: flex;
         }
     }
+}
+
+.filter-sectionwrap.frstsection {
+    padding-top: 90px;
+    margin-top: 0;
 }
 
 // filter end
