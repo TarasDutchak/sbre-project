@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1730999145415,
@@ -20,6 +20,50 @@
                 {
                     "date": 1731070560961,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -467,9 +467,9 @@\n .ddmenu {\n     background: #fff;\n     border-radius: 0 0 10px 10px;\n     position: absolute;\n-    top: 32px;\n+    top: 48px;\n     left: 0;\n     box-shadow: 0 7px 12px rgba(#000, 0.3);\n     width: 280px;\n     padding: 16px 12px 12px 12px;\n"
+                },
+                {
+                    "date": 1731142072834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n }\n \n .welcomesection {\n     position: relative;\n-    padding-top: 90px;\n+    // padding-top: 90px;\n \n     .containersect {\n         transition: 0.5s;\n     }\n@@ -1031,9 +1031,9 @@\n         padding-right: 75px;\n     }\n \n     .welcomesection {\n-        padding-top: 75px;\n+        // padding-top: 75px;\n     }\n \n     .welcomesection .imgwrap {\n         height: calc(100vh - 120px);\n"
+                },
+                {
+                    "date": 1731142109108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1245,11 +1245,11 @@\n     .contactsection__left p {\n         max-width: 100%;\n     }\n \n-    .welcomesection {\n-        padding-top: 100px;\n-    }\n+    // .welcomesection {\n+    //     padding-top: 100px;\n+    // }\n \n \n \n \n"
+                },
+                {
+                    "date": 1731142178775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1301,9 +1301,9 @@\n         padding-right: 12px;\n     }\n \n     .welcomesection {\n-        padding-top: 85px;\n+        // padding-top: 85px;\n     }\n \n     .filter-sectionwrap {\n         margin-top: 30px;\n"
+                },
+                {
+                    "date": 1731142309313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -637,9 +637,9 @@\n     }\n }\n \n .filter-sectionwrap.frstsection {\n-    padding-top: 90px;\n+    // padding-top: 90px;\n     margin-top: 0;\n }\n \n // filter end\n"
+                },
+                {
+                    "date": 1731151859952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -887,9 +887,9 @@\n         margin-bottom: 16px;\n         max-width: 100%;\n     }\n \n-    p {\n+    p:not(.section-title) {\n         max-width: 400px;\n         @include body1;\n         color: var(--primary);\n         margin-bottom: 48px;\n"
+                },
+                {
+                    "date": 1731152061821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -880,11 +880,9 @@\n     padding: 98px 0 80px;\n }\n \n .contactsection__left {\n-    .title {\n-        @include h1;\n-        color: var(--primary);\n+    .section-title {\n         margin-bottom: 16px;\n         max-width: 100%;\n     }\n \n"
+                },
+                {
+                    "date": 1731152074085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1121,9 +1121,9 @@\n     }\n \n \n     .objects-section .titlesect,\n-    .contactsection__left .title {\n+    .contactsection__left .section-title {\n         font-size: 40px;\n     }\n \n     .formdark .inputfield label {\n"
+                },
+                {
+                    "date": 1731152081062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1251,9 +1251,9 @@\n \n \n \n     .objects-section .titlesect,\n-    .contactsection__left .title {\n+    .contactsection__left .section-title {\n         font-size: 32px;\n     }\n \n     .fscontent__btn input,\n"
+                },
+                {
+                    "date": 1731152091035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1423,9 +1423,8 @@\n     .objects-section__sortrow p {\n         font-size: 14px;\n     }\n \n-    .objects-section .titlesect,\n-    .contactsection__left .title {\n+    .objects-section .titlesect {\n         font-size: 24px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731152097808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1250,10 +1250,9 @@\n \n \n \n \n-    .objects-section .titlesect,\n-    .contactsection__left .section-title {\n+    .objects-section .titlesect{\n         font-size: 32px;\n     }\n \n     .fscontent__btn input,\n"
+                },
+                {
+                    "date": 1731152104265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1120,10 +1120,9 @@\n         padding-top: 70px;\n     }\n \n \n-    .objects-section .titlesect,\n-    .contactsection__left .section-title {\n+    .objects-section .titlesect {\n         font-size: 40px;\n     }\n \n     .formdark .inputfield label {\n"
                 }
             ],
             "date": 1730999145415,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 114,
+            "activePatchIndex": 125,
             "patches": [
                 {
                     "date": 1731063466384,
@@ -464,6 +464,50 @@
                 {
                     "date": 1731069695994,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -357,5 +357,8 @@\n     .similarprop {\n         padding: 40px 0 50px;\n     }\n \n+    .similarprop__head {\n+        margin-bottom: 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731142227195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .propslidersection {\n-    padding-top: 90px;\n+    // padding-top: 90px;\n }\n \n .property-slider {\n     .imgwrap {\n"
+                },
+                {
+                    "date": 1731142234056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .propslidersection {\n-    // padding-top: 90px;\n+    padding-top: 90px;\n }\n \n .property-slider {\n     .imgwrap {\n"
+                },
+                {
+                    "date": 1731142267603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .propslidersection {\n-    padding-top: 90px;\n+    padding-top: 1190px;\n }\n \n .property-slider {\n     .imgwrap {\n"
+                },
+                {
+                    "date": 1731142275548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .propslidersection {\n-    padding-top: 1190px;\n+    // padding-top: 90px;\n }\n \n .property-slider {\n     .imgwrap {\n"
+                },
+                {
+                    "date": 1731151900235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,14 +177,12 @@\n     display: flex;\n     flex-wrap: wrap;\n     margin-bottom: 32px;\n \n-    .title {\n+    .section-title {\n         width: 100%;\n         max-width: calc(100% - 70px);\n         flex: 0 0 calc(100% - 70px);\n-        @include h1;\n-        color: var(--primary);\n     }\n \n     .headsliderarrow {\n         width: 100%;\n"
+                },
+                {
+                    "date": 1731151915068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     margin-bottom: 0;\n }\n \n @media(max-width:1439.8px) {\n-    .similarprop__head .title {\n+    .similarprop__head .section-title {\n         font-size: 40px;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1731151927170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -261,9 +261,9 @@\n     .peimg {\n         width: 100%;\n     }\n \n-    .similarprop__head .title {\n+    .similarprop__head .section-title {\n         font-size: 32px;\n     }\n \n     .property-slider .imgwrap,\n"
+                },
+                {
+                    "date": 1731151934784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -325,9 +325,9 @@\n     .property-enquiry {\n         padding-top: 20px;\n     }\n \n-    .similarprop__head .title {\n+    .similarprop__head .section-title {\n         font-size: 24px;\n     }\n \n     .similarprop__head {\n@@ -338,9 +338,9 @@\n         max-width: 50px;\n         flex: 0 0 50px;\n     }\n \n-    .similarprop__head .title {\n+    .similarprop__head .section-title {\n         max-width: calc(100% - 50px);\n         flex: 0 0 calc(100% - 50px);\n     }\n \n"
+                },
+                {
+                    "date": 1731151955409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,8 +181,9 @@\n     .section-title {\n         width: 100%;\n         max-width: calc(100% - 70px);\n         flex: 0 0 calc(100% - 70px);\n+        margin: 0;\n     }\n \n     .headsliderarrow {\n         width: 100%;\n"
+                },
+                {
+                    "date": 1731151967272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,9 @@\n     .section-title {\n         width: 100%;\n         max-width: calc(100% - 70px);\n         flex: 0 0 calc(100% - 70px);\n-        margin: 0;\n+        m0\n     }\n \n     .headsliderarrow {\n         width: 100%;\n"
+                },
+                {
+                    "date": 1731151978644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,9 @@\n     .section-title {\n         width: 100%;\n         max-width: calc(100% - 70px);\n         flex: 0 0 calc(100% - 70px);\n-        m0\n+        margin: 0;\n     }\n \n     .headsliderarrow {\n         width: 100%;\n"
                 }
             ],
             "date": 1731063466384,

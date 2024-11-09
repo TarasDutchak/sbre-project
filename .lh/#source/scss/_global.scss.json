@@ -3,11 +3,71 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 15,
             "patches": [
                 {
                     "date": 1731068681431,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731142036486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -211,8 +211,11 @@\n h5 {}\r\n \r\n h6 {}\r\n \r\n+.main {\r\n+    padding-top: 90px;\r\n+}\r\n \r\n @media(max-width:1499.8px) {\r\n     .container {\r\n         max-width: 100%;\r\n"
+                },
+                {
+                    "date": 1731142086875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,8 +223,14 @@\n         padding-right: 75px;\r\n     }\r\n }\r\n \r\n+@media(max-width:1439.8px) {\r\n+    .main {\r\n+        padding-top: 75px;\r\n+    }\r\n+}\r\n+\r\n @media(max-width:991.8px) {\r\n     .container {\r\n         padding-left: 25px;\r\n         padding-right: 25px;\r\n"
+                },
+                {
+                    "date": 1731142122259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -234,8 +234,13 @@\n     .container {\r\n         padding-left: 25px;\r\n         padding-right: 25px;\r\n     }\r\n+\r\n+\r\n+    .main {\r\n+        padding-top: 100px;\r\n+    }\r\n }\r\n \r\n @media(max-width:575.8px) {\r\n     .container,\r\n"
+                },
+                {
+                    "date": 1731142142463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,5 +247,9 @@\n     .containersect {\r\n         padding-left: 12px;\r\n         padding-right: 12px;\r\n     }\r\n+\r\n+    .main {\r\n+        padding-top: 85px;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731142162859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -249,7 +249,7 @@\n         padding-right: 12px;\r\n     }\r\n \r\n     .main {\r\n-        padding-top: 85px;\r\n+        // padding-top: 85px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731142169547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -249,7 +249,7 @@\n         padding-right: 12px;\r\n     }\r\n \r\n     .main {\r\n-        // padding-top: 85px;\r\n+        padding-top: 85px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731143319569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -218,10 +218,10 @@\n \r\n @media(max-width:1499.8px) {\r\n     .container {\r\n         max-width: 100%;\r\n-        padding-left: 75px;\r\n-        padding-right: 75px;\r\n+        padding-left: 128px;\r\n+        padding-right: 128px;\r\n     }\r\n }\r\n \r\n @media(max-width:1439.8px) {\r\n"
+                },
+                {
+                    "date": 1731143350930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -218,10 +218,10 @@\n \r\n @media(max-width:1499.8px) {\r\n     .container {\r\n         max-width: 100%;\r\n-        padding-left: 128px;\r\n-        padding-right: 128px;\r\n+        padding-left: 75px;\r\n+        padding-right: 75px;\r\n     }\r\n }\r\n \r\n @media(max-width:1439.8px) {\r\n"
+                },
+                {
+                    "date": 1731143357609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,9 +215,9 @@\n .main {\r\n     padding-top: 90px;\r\n }\r\n \r\n-@media(max-width:1499.8px) {\r\n+@media(max-width:1399.8px) {\r\n     .container {\r\n         max-width: 100%;\r\n         padding-left: 75px;\r\n         padding-right: 75px;\r\n"
+                },
+                {
+                    "date": 1731143389134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,9 +215,9 @@\n .main {\r\n     padding-top: 90px;\r\n }\r\n \r\n-@media(max-width:1399.8px) {\r\n+@media(max-width:1439.8px) {\r\n     .container {\r\n         max-width: 100%;\r\n         padding-left: 75px;\r\n         padding-right: 75px;\r\n"
+                },
+                {
+                    "date": 1731151610101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,8 +199,9 @@\n }\r\n \r\n \r\n \r\n+\r\n h1 {}\r\n \r\n h2 {}\r\n \r\n@@ -215,8 +216,12 @@\n .main {\r\n     padding-top: 90px;\r\n }\r\n \r\n+.section-title {\r\n+    \r\n+}\r\n+\r\n @media(max-width:1439.8px) {\r\n     .container {\r\n         max-width: 100%;\r\n         padding-left: 75px;\r\n"
+                },
+                {
+                    "date": 1731151620227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -217,9 +217,14 @@\n     padding-top: 90px;\r\n }\r\n \r\n .section-title {\r\n-    \r\n+    margin-bottom: 32px;\r\n+    font-size: 56px;\r\n+    line-height: 130%;\r\n+    color: #000;\r\n+    font-weight: 600;\r\n+    color: vaR(--primary);\r\n }\r\n \r\n @media(max-width:1439.8px) {\r\n     .container {\r\n"
+                },
+                {
+                    "date": 1731151635167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,8 +231,12 @@\n         max-width: 100%;\r\n         padding-left: 75px;\r\n         padding-right: 75px;\r\n     }\r\n+\r\n+    .section-title {\r\n+        font-size: 40px;\r\n+    }\r\n }\r\n \r\n @media(max-width:1439.8px) {\r\n     .main {\r\n"
+                },
+                {
+                    "date": 1731151649983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -253,8 +253,12 @@\n \r\n     .main {\r\n         padding-top: 100px;\r\n     }\r\n+\r\n+    .section-title {\r\n+        font-size: 32px;\r\n+    }\r\n }\r\n \r\n @media(max-width:575.8px) {\r\n     .container,\r\n"
+                },
+                {
+                    "date": 1731151694492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -249,9 +249,8 @@\n         padding-left: 25px;\r\n         padding-right: 25px;\r\n     }\r\n \r\n-\r\n     .main {\r\n         padding-top: 100px;\r\n     }\r\n \r\n@@ -269,5 +268,9 @@\n \r\n     .main {\r\n         padding-top: 85px;\r\n     }\r\n+\r\n+    .section-title {\r\n+        font-size: 24px;\r\n+    }\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1731068681431,

@@ -1,5 +1,5 @@
 .propslidersection {
-    padding-top: 90px;
+    // padding-top: 90px;
 }
 
 .property-slider {
@@ -178,12 +178,11 @@
     flex-wrap: wrap;
     margin-bottom: 32px;
 
-    .title {
+    .section-title {
         width: 100%;
         max-width: calc(100% - 70px);
         flex: 0 0 calc(100% - 70px);
-        @include h1;
-        color: var(--primary);
+        margin: 0;
     }
 
     .headsliderarrow {
@@ -217,7 +216,7 @@
 }
 
 @media(max-width:1439.8px) {
-    .similarprop__head .title {
+    .similarprop__head .section-title {
         font-size: 40px;
     }
 }
@@ -264,7 +263,7 @@
         width: 100%;
     }
 
-    .similarprop__head .title {
+    .similarprop__head .section-title {
         font-size: 32px;
     }
 
@@ -328,7 +327,7 @@
         padding-top: 20px;
     }
 
-    .similarprop__head .title {
+    .similarprop__head .section-title {
         font-size: 24px;
     }
 
@@ -341,7 +340,7 @@
         flex: 0 0 50px;
     }
 
-    .similarprop__head .title {
+    .similarprop__head .section-title {
         max-width: calc(100% - 50px);
         flex: 0 0 calc(100% - 50px);
     }

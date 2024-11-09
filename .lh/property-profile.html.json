@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 49,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1731063076217,
@@ -204,6 +204,14 @@
                 {
                     "date": 1731069223425,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n \n         <div class=\"property-infosect\">\n             <div class=\"container\">\n                 <div class=\"row\">\n-                    <div class=\"col-md-8\">\n+                    <div class=\"col-sm-8\">\n                         <div class=\"property-infosect__left\">\n                             <div class=\"property-infosect__header\">\n                                 <p class=\"title\">\n                                     Peace of Paradise\n@@ -172,9 +172,9 @@\n                                 Go back\n                             </a>\n                         </div>\n                     </div>\n-                    <div class=\"col-md-4\">\n+                    <div class=\"col-sm-4\">\n                         <div class=\"property-infosect__right\">\n                             <ul>\n                                 <li>\n                                     <img src=\"img/property/infic1.svg\" alt=\"\">\n"
+                },
+                {
+                    "date": 1731151786510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n             <div class=\"container\">\n                 <div class=\"row\">\n                     <div class=\"col-lg-5\">\n                         <div class=\"contactsection__left\">\n-                            <p class=\"title\">\n+                            <p class=\"section-title\">\n                                 Property enquiry\n                             </p>\n                             <img class=\"peimg\" src=\"img/property/img1.jpg\" alt=\"img\">\n                             <ul>\n"
+                },
+                {
+                    "date": 1731151880262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -276,9 +276,9 @@\n \n         <div class=\"similarprop\">\n             <div class=\"container\">\n                 <div class=\"similarprop__head\">\n-                    <p class=\"title\">Similar properties</p>\n+                    <p class=\"section-title\">Similar properties</p>\n                     <div class=\"headsliderarrow\">\n                         <div class=\"swiper-button-next-t\">\n                             <img src=\"img/property/slider-arr.svg\" alt=\"next\">\n                         </div>\n"
                 }
             ],
             "date": 1731063076217,

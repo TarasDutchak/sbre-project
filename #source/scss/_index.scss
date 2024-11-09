@@ -122,7 +122,7 @@
 
 .welcomesection {
     position: relative;
-    padding-top: 90px;
+    // padding-top: 90px;
 
     .containersect {
         transition: 0.5s;
@@ -638,7 +638,7 @@
 }
 
 .filter-sectionwrap.frstsection {
-    padding-top: 90px;
+    // padding-top: 90px;
     margin-top: 0;
 }
 
@@ -881,14 +881,12 @@
 }
 
 .contactsection__left {
-    .title {
-        @include h1;
-        color: var(--primary);
+    .section-title {
         margin-bottom: 16px;
         max-width: 100%;
     }
 
-    p {
+    p:not(.section-title) {
         max-width: 400px;
         @include body1;
         color: var(--primary);
@@ -1032,7 +1030,7 @@
     }
 
     .welcomesection {
-        padding-top: 75px;
+        // padding-top: 75px;
     }
 
     .welcomesection .imgwrap {
@@ -1123,8 +1121,7 @@
     }
 
 
-    .objects-section .titlesect,
-    .contactsection__left .title {
+    .objects-section .titlesect {
         font-size: 40px;
     }
 
@@ -1246,15 +1243,14 @@
         max-width: 100%;
     }
 
-    .welcomesection {
-        padding-top: 100px;
-    }
+    // .welcomesection {
+    //     padding-top: 100px;
+    // }
 
 
 
 
-    .objects-section .titlesect,
-    .contactsection__left .title {
+    .objects-section .titlesect{
         font-size: 32px;
     }
 
@@ -1302,7 +1298,7 @@
     }
 
     .welcomesection {
-        padding-top: 85px;
+        // padding-top: 85px;
     }
 
     .filter-sectionwrap {
@@ -1426,8 +1422,7 @@
         font-size: 14px;
     }
 
-    .objects-section .titlesect,
-    .contactsection__left .title {
+    .objects-section .titlesect {
         font-size: 24px;
     }
 }
