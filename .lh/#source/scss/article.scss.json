@@ -1,0 +1,210 @@
+{
+    "sourceFile": "#source/scss/article.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 48,
+            "patches": [
+                {
+                    "date": 1731229467253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731229473117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n     h1 {\n         text-align: center;\n         @include h1;\n         color: var(--primary);\n+        margin-bottom: 24px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731229505840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,22 @@\n         @include h1;\n         color: var(--primary);\n         margin-bottom: 24px;\n     }\n+\n+    .artheadlist {\n+        text-align: center;\n+        li {\n+            display: inline-block;\n+            vertical-align: middle;\n+        }\n+    }\n+\n+\n+\n+\n+\n+\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731229521332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,13 @@\n     }\n \n     .artheadlist {\n         text-align: center;\n+\n         li {\n             display: inline-block;\n             vertical-align: middle;\n+            color: var(--secondaty);\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1731337445396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+.article-header {\n+    h1 {\n+        text-align: center;\n+        @include h1;\n+        color: var(--primary);\n+        margin-bottom: 24px;\n+    }\n+\n+    .artheadlist {\n+        text-align: center;\n+\n+        li {\n+            display: inline-block;\n+            vertical-align: middle;\n+            color: var(--secondaty);\n+            margin-left: 53px;\n+\n+            &:last-child {\n+                margin-right: 0;\n+            }\n+        }\n+    }\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731337456904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,39 +13,17 @@\n             display: inline-block;\n             vertical-align: middle;\n             color: var(--secondaty);\n             margin-left: 53px;\n+            position: relative;\n \n             &:last-child {\n                 margin-right: 0;\n             }\n-        }\n-    }\n \n+            &::after {\n \n-\n-\n-\n-\n-\n-\n-\n-}\n-.article-header {\n-    h1 {\n-        text-align: center;\n-        @include h1;\n-        color: var(--primary);\n-        margin-bottom: 24px;\n-    }\n-\n-    .artheadlist {\n-        text-align: center;\n-\n-        li {\n-            display: inline-block;\n-            vertical-align: middle;\n-            color: var(--secondaty);\n+            }\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1731337479068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,14 @@\n                 margin-right: 0;\n             }\n \n             &::after {\n-\n+                content: '';\n+                display: inline-block;\n+                width: 5px;\n+                height: 5px;\n+                border-radius: 50%;\n+                background: var(--accent);\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1731337485957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,10 @@\n                 width: 5px;\n                 height: 5px;\n                 border-radius: 50%;\n                 background: var(--accent);\n+                position: absolute;\n+                \n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1731337492399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,12 @@\n             position: relative;\n \n             &:last-child {\n                 margin-right: 0;\n+\n+                &::after {\n+                    display: none;\n+                }\n             }\n \n             &::after {\n                 content: '';\n@@ -27,9 +31,9 @@\n                 height: 5px;\n                 border-radius: 50%;\n                 background: var(--accent);\n                 position: absolute;\n-                \n+\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1731337503926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n                 height: 5px;\n                 border-radius: 50%;\n                 background: var(--accent);\n                 position: absolute;\n+                right: -26px;\n \n             }\n         }\n     }\n"
+                },
+                {
+                    "date": 1731337511813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n                 height: 5px;\n                 border-radius: 50%;\n                 background: var(--accent);\n                 position: absolute;\n-                right: -26px;\n+                right: -30px;\n \n             }\n         }\n     }\n"
+                },
+                {
+                    "date": 1731337521266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,10 @@\n                 border-radius: 50%;\n                 background: var(--accent);\n                 position: absolute;\n                 right: -30px;\n+                top: 50%;\n+                transform: translateY(-50%);\n \n             }\n         }\n     }\n"
+                },
+                {
+                    "date": 1731337531388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     }\n \n     .artheadlist {\n         text-align: center;\n+        margin-bottom: 24px;\n \n         li {\n             display: inline-block;\n             vertical-align: middle;\n"
+                },
+                {
+                    "date": 1731337718360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,12 +41,13 @@\n         }\n     }\n \n \n+}\n \n-\n-\n-\n-\n-\n-\n+.articlesection {\n+    article {\n+        p {\n+            margin-bottom: 20px;\n+        }\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731337755032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,9 @@\n         p {\n             margin-bottom: 20px;\n         }\n     }\n+\n+    .goback {\n+        margin-top: 4px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731337787492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,12 @@\n }\n \n .articlesection {\n     article {\n+        font-size: 16px;\n+        line-height: 170%;\n+        color: var(--primary);\n+\n         p {\n             margin-bottom: 20px;\n         }\n     }\n"
+                },
+                {
+                    "date": 1731337811829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         text-align: center;\n         margin-bottom: 24px;\n \n         li {\n+            @include body2;\n             display: inline-block;\n             vertical-align: middle;\n             color: var(--secondaty);\n             margin-left: 53px;\n"
+                },
+                {
+                    "date": 1731337844073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,12 @@\n \n         p {\n             margin-bottom: 20px;\n         }\n+\n+        ul {\n+            padding-left: 20px;\n+        }\n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731337864167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,70 @@\n+.article-header {\n+    h1 {\n+        text-align: center;\n+        @include h1;\n+        color: var(--primary);\n+        margin-bottom: 24px;\n+    }\n+\n+    .artheadlist {\n+        text-align: center;\n+        margin-bottom: 24px;\n+\n+        li {\n+            @include body2;\n+            display: inline-block;\n+            vertical-align: middle;\n+            color: var(--secondaty);\n+            margin-left: 53px;\n+            position: relative;\n+\n+            &:last-child {\n+                margin-right: 0;\n+\n+                &::after {\n+                    display: none;\n+                }\n+            }\n+\n+            &::after {\n+                content: '';\n+                display: inline-block;\n+                width: 5px;\n+                height: 5px;\n+                border-radius: 50%;\n+                background: var(--accent);\n+                position: absolute;\n+                right: -30px;\n+                top: 50%;\n+                transform: translateY(-50%);\n+\n+            }\n+        }\n+    }\n+\n+\n+}\n+\n+.articlesection {\n+    article {\n+        font-size: 16px;\n+        line-height: 170%;\n+        color: var(--primary);\n+\n+        p {\n+            margin-bottom: 20px;\n+        }\n+\n+        ul {\n+            padding-left: 20px;\n+\n+            li {\n+                line-height: 170%;\n+            }\n+        }\n+    }\n+\n+    .goback {\n+        margin-top: 4px;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731337878185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,71 @@\n+.article-header {\n+    h1 {\n+        text-align: center;\n+        @include h1;\n+        color: var(--primary);\n+        margin-bottom: 24px;\n+    }\n+\n+    .artheadlist {\n+        text-align: center;\n+        margin-bottom: 24px;\n+\n+        li {\n+            @include body2;\n+            display: inline-block;\n+            vertical-align: middle;\n+            color: var(--secondaty);\n+            margin-left: 53px;\n+            position: relative;\n+\n+            &:last-child {\n+                margin-right: 0;\n+\n+                &::after {\n+                    display: none;\n+                }\n+            }\n+\n+            &::after {\n+                content: '';\n+                display: inline-block;\n+                width: 5px;\n+                height: 5px;\n+                border-radius: 50%;\n+                background: var(--accent);\n+                position: absolute;\n+                right: -30px;\n+                top: 50%;\n+                transform: translateY(-50%);\n+\n+            }\n+        }\n+    }\n+\n+\n+}\n+\n+.articlesection {\n+    article {\n+        font-size: 16px;\n+        line-height: 170%;\n+        color: var(--primary);\n+\n+        p {\n+            margin-bottom: 20px;\n+        }\n+\n+        ul {\n+            padding-left: 20px;\n+            margin-bottom: 20px;\n+\n+            li {\n+                line-height: 170%;\n+            }\n+        }\n+    }\n+\n+    .goback {\n+        margin-top: 4px;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731337889074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,74 +62,12 @@\n             li {\n                 line-height: 170%;\n             }\n         }\n-    }\n \n-    .goback {\n-        margin-top: 4px;\n-    }\n-}\n-.article-header {\n-    h1 {\n-        text-align: center;\n-        @include h1;\n-        color: var(--primary);\n-        margin-bottom: 24px;\n-    }\n-\n-    .artheadlist {\n-        text-align: center;\n-        margin-bottom: 24px;\n-\n-        li {\n-            @include body2;\n-            display: inline-block;\n-            vertical-align: middle;\n-            color: var(--secondaty);\n-            margin-left: 53px;\n-            position: relative;\n-\n-            &:last-child {\n-                margin-right: 0;\n-\n-                &::after {\n-                    display: none;\n-                }\n-            }\n-\n-            &::after {\n-                content: '';\n-                display: inline-block;\n-                width: 5px;\n-                height: 5px;\n-                border-radius: 50%;\n-                background: var(--accent);\n-                position: absolute;\n-                right: -30px;\n-                top: 50%;\n-                transform: translateY(-50%);\n-\n-            }\n-        }\n-    }\n-\n-\n-}\n-\n-.articlesection {\n-    article {\n-        font-size: 16px;\n-        line-height: 170%;\n-        color: var(--primary);\n-\n-        p {\n+        ol {\n+            padding-left: 20px;\n             margin-bottom: 20px;\n-        }\n-\n-        ul {\n-            padding-left: 20px;\n-\n             li {\n                 line-height: 170%;\n             }\n         }\n@@ -137,71 +75,5 @@\n \n     .goback {\n         margin-top: 4px;\n     }\n-}\n-.article-header {\n-    h1 {\n-        text-align: center;\n-        @include h1;\n-        color: var(--primary);\n-        margin-bottom: 24px;\n-    }\n-\n-    .artheadlist {\n-        text-align: center;\n-        margin-bottom: 24px;\n-\n-        li {\n-            @include body2;\n-            display: inline-block;\n-            vertical-align: middle;\n-            color: var(--secondaty);\n-            margin-left: 53px;\n-            position: relative;\n-\n-            &:last-child {\n-                margin-right: 0;\n-\n-                &::after {\n-                    display: none;\n-                }\n-            }\n-\n-            &::after {\n-                content: '';\n-                display: inline-block;\n-                width: 5px;\n-                height: 5px;\n-                border-radius: 50%;\n-                background: var(--accent);\n-                position: absolute;\n-                right: -30px;\n-                top: 50%;\n-                transform: translateY(-50%);\n-\n-            }\n-        }\n-    }\n-\n-\n-}\n-\n-.articlesection {\n-    article {\n-        font-size: 16px;\n-        line-height: 170%;\n-        color: var(--primary);\n-\n-        p {\n-            margin-bottom: 20px;\n-        }\n-\n-        ul {\n-            padding-left: 20px;\n-        }\n-    }\n-\n-    .goback {\n-        margin-top: 4px;\n-    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731337905810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             }\n         }\n \n         ol {\n-            padding-left: 20px;\n+            // padding-left: 20px;\n             margin-bottom: 20px;\n             li {\n                 line-height: 170%;\n             }\n"
+                },
+                {
+                    "date": 1731337914718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,24 +54,19 @@\n         p {\n             margin-bottom: 20px;\n         }\n \n-        ul {\n+        ul,\n+        ol {\n             padding-left: 20px;\n             margin-bottom: 20px;\n \n             li {\n                 line-height: 170%;\n             }\n         }\n \n-        ol {\n-            // padding-left: 20px;\n-            margin-bottom: 20px;\n-            li {\n-                line-height: 170%;\n-            }\n-        }\n+        \n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731337942391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,11 @@\n                 line-height: 170%;\n             }\n         }\n \n-        \n+        img {\n+            width: 100%;\n+        }\n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731338002758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,14 @@\n         }\n \n         img {\n             width: 100%;\n+            margin-bottom: 20px;\n         }\n+\n+        h2 {\n+            @include h2;\n+        }\n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731338015537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,11 @@\n \n         h2 {\n             @include h2;\n         }\n+        h3 {\n+            @include h3;\n+        }\n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731338022671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,8 +75,11 @@\n         }\n         h3 {\n             @include h3;\n         }\n+        h4 {\n+            @include h4;\n+        }\n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731338030866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,14 +72,20 @@\n \n         h2 {\n             @include h2;\n         }\n+\n         h3 {\n             @include h3;\n         }\n+\n         h4 {\n             @include h4;\n         }\n+\n+        h5 {\n+            @include h5;\n+        }\n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731338037205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,12 @@\n \n         h5 {\n             @include h5;\n         }\n+\n+        h6 {\n+            @include h6;\n+        }\n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731338057401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,8 +88,16 @@\n \n         h6 {\n             @include h6;\n         }\n+\n+        h2,\n+        h3,\n+        h4,\n+        h5,\n+        h6 {\n+            margin-bottom: 20px;\n+        }\n     }\n \n     .goback {\n         margin-top: 4px;\n"
+                },
+                {
+                    "date": 1731338136979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,5 +101,9 @@\n \n     .goback {\n         margin-top: 4px;\n     }\n+}\n+\n+@media(max-width:1439.8px) {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338144256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,6 +104,8 @@\n     }\n }\n \n @media(max-width:1439.8px) {\n-    \n+    .article-header h1 {\n+        font-size: 40px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338155574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,5 +107,9 @@\n @media(max-width:1439.8px) {\n     .article-header h1 {\n         font-size: 40px;\n     }\n+\n+    .articlesection article h2 {\n+        font-size: 36px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338172009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,9 @@\n         }\n \n         h5 {\n             @include h5;\n+            font-weight: 500;\n         }\n \n         h6 {\n             @include h6;\n"
+                },
+                {
+                    "date": 1731338177443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n         }\n \n         h5 {\n             @include h5;\n-            font-weight: 500;\n+            font-weight: 400;\n         }\n \n         h6 {\n             @include h6;\n"
+                },
+                {
+                    "date": 1731338184440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n         }\n \n         h5 {\n             @include h5;\n-            font-weight: 400;\n+            \n         }\n \n         h6 {\n             @include h6;\n"
+                },
+                {
+                    "date": 1731338191772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,9 @@\n         }\n \n         h2 {\n             @include h2;\n+            font-weight: 600;\n         }\n \n         h3 {\n             @include h3;\n"
+                },
+                {
+                    "date": 1731338246098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,5 +113,13 @@\n \n     .articlesection article h2 {\n         font-size: 36px;\n     }\n+}\n+\n+@media(max-width:767.8px) {\n+    .article-header h1 {\n+        font-size: 32px;\n+    }\n+\n+    margin-bottom: 20px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338265499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             @include body2;\n             display: inline-block;\n             vertical-align: middle;\n             color: var(--secondaty);\n-            margin-left: 53px;\n+            margin-right: 53px;\n             position: relative;\n \n             &:last-child {\n                 margin-right: 0;\n@@ -118,8 +118,8 @@\n \n @media(max-width:767.8px) {\n     .article-header h1 {\n         font-size: 32px;\n+        margin-bottom: 15px;\n     }\n-\n-    margin-bottom: 20px;\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338278368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,6 +120,10 @@\n     .article-header h1 {\n         font-size: 32px;\n         margin-bottom: 15px;\n     }\n+\n+    .article-header .artheadlist {\n+        margin-bottom: 15px;\n+    }\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338293039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,8 +122,11 @@\n         margin-bottom: 15px;\n     }\n \n     .article-header .artheadlist {\n-        margin-bottom: 15px;\n+        margin-bottom: 20px;\n     }\n     \n+    .articlesection article h2 {\n+        font-size: 28px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338301540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,5 +128,9 @@\n     \n     .articlesection article h2 {\n         font-size: 28px;\n     }\n+\n+    .articlesection article h3 {\n+        font-size: 24px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338323981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,5 +132,17 @@\n \n     .articlesection article h3 {\n         font-size: 24px;\n     }\n+\n+    .articlesection article h4 {\n+        font-size: 21px;\n+    }\n+\n+    .articlesection article h5 {\n+        font-size: 18px;\n+    }\n+\n+    .articlesection article h6 {\n+        font-size: 16px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338354779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,5 +144,9 @@\n \n     .articlesection article h6 {\n         font-size: 16px;\n     }\n+}\n+\n+@media(max-width:575.8px)  {\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338368845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,6 +147,8 @@\n     }\n }\n \n @media(max-width:575.8px)  {\n-\n+    .article-header h1 {\n+        font-size: 24px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338395608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,5 +150,13 @@\n @media(max-width:575.8px)  {\n     .article-header h1 {\n         font-size: 24px;\n     }\n+\n+\n+    .articlesection article h2 {\n+        font-size: 24px;\n+    }\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338401813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,7 +156,10 @@\n     .articlesection article h2 {\n         font-size: 24px;\n     }\n \n+    .articlesection article h3 {\n+        font-size: 21px;\n+    }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338408929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,6 +160,10 @@\n     .articlesection article h3 {\n         font-size: 21px;\n     }\n \n+    .articlesection article h4 {\n+        font-size: 20px;\n+    }\n \n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731338426545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n         }\n \n         h5 {\n             @include h5;\n-            \n+\n         }\n \n         h6 {\n             @include h6;\n@@ -124,9 +124,9 @@\n \n     .article-header .artheadlist {\n         margin-bottom: 20px;\n     }\n-    \n+\n     .articlesection article h2 {\n         font-size: 28px;\n     }\n \n@@ -146,9 +146,9 @@\n         font-size: 16px;\n     }\n }\n \n-@media(max-width:575.8px)  {\n+@media(max-width:575.8px) {\n     .article-header h1 {\n         font-size: 24px;\n     }\n \n@@ -164,6 +164,13 @@\n     .articlesection article h4 {\n         font-size: 20px;\n     }\n \n+    .articlesection article h2,\n+    .articlesection article h3,\n+    .articlesection article h4,\n+    .articlesection article h5,\n+    .articlesection article h6 {\n+        margin-bottom: 10px;\n+    }\n \n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1731229467253,
+            "name": "Commit-0",
+            "content": ".article-header {\n    h1 {\n        text-align: center;\n        @include h1;\n        color: var(--primary);\n    }\n}"
+        }
+    ]
+}

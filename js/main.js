@@ -256,10 +256,32 @@ $(document).ready(function () {
         });
     }
 
+    if ($('.testimonials-slider').length) {
+        var swiper = new Swiper(".testimonials-slider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            speed: 1000,
+            navigation: {
+                nextEl: ".swiper-button-next-t",
+                prevEl: ".swiper-button-prev-t",
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
 
 
+            },
+        });
+    }
 
 
+    
 
 
 

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 112,
+            "activePatchIndex": 134,
             "patches": [
                 {
                     "date": 1731142551003,
@@ -456,6 +456,94 @@
                 {
                     "date": 1731151748614,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,9 +223,8 @@\n         width: 100%;\n         max-width: calc(100% - 152px);\n         flex: 0 0 calc(100% - 152px);\n         margin: 0;\n-        @include h1;\n     }\n \n }\n \n"
+                },
+                {
+                    "date": 1731225254041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,8 +227,21 @@\n     }\n \n }\n \n+.teamrow {\n+    margin-top: 56px;\n+}\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n @media(max-width:1439.8px) {\n \n \n     .abcounts {\n"
+                },
+                {
+                    "date": 1731225276280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,17 +231,29 @@\n .teamrow {\n     margin-top: 56px;\n }\n \n+.ourtembox {\n+    .imgwrap {\n \n+    }\n \n+    .description {\n+        p {\n \n+        }\n \n+        .name {}\n+    }\n+}\n \n \n \n \n \n+\n+\n+\n @media(max-width:1439.8px) {\n \n \n     .abcounts {\n"
+                },
+                {
+                    "date": 1731225300827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -233,9 +233,9 @@\n }\n \n .ourtembox {\n     .imgwrap {\n-\n+        \n     }\n \n     .description {\n         p {\n"
+                },
+                {
+                    "date": 1731225311824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -233,9 +233,9 @@\n }\n \n .ourtembox {\n     .imgwrap {\n-        \n+        aspect-ratio: 1 / 1;\n     }\n \n     .description {\n         p {\n"
+                },
+                {
+                    "date": 1731225318157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -234,8 +234,10 @@\n \n .ourtembox {\n     .imgwrap {\n         aspect-ratio: 1 / 1;\n+        position: relative;\n+        overflow: hid';\n     }\n \n     .description {\n         p {\n"
+                },
+                {
+                    "date": 1731225329588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -235,9 +235,10 @@\n .ourtembox {\n     .imgwrap {\n         aspect-ratio: 1 / 1;\n         position: relative;\n-        overflow: hid';\n+        overflow: hidden;\n+        border-radius: 12px;\n     }\n \n     .description {\n         p {\n"
+                },
+                {
+                    "date": 1731225423136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,11 +237,19 @@\n         aspect-ratio: 1 / 1;\n         position: relative;\n         overflow: hidden;\n         border-radius: 12px;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n     }\n \n     .description {\n+\n         p {\n \n         }\n \n"
+                },
+                {
+                    "date": 1731225433053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,8 +247,9 @@\n         }\n     }\n \n     .description {\n+        padding-top: 16px;\n \n         p {\n \n         }\n"
+                },
+                {
+                    "date": 1731225448429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -250,9 +250,11 @@\n     .description {\n         padding-top: 16px;\n \n         p {\n-\n+            margin: 0;\n+            @include body2;\n+            color: var(--primary);\n         }\n \n         .name {}\n     }\n"
+                },
+                {
+                    "date": 1731225454710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -255,9 +255,12 @@\n             @include body2;\n             color: var(--primary);\n         }\n \n-        .name {}\n+        .name {\n+            margin-bottom: 8px;\n+            \n+        }\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1731225464394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -257,9 +257,10 @@\n         }\n \n         .name {\n             margin-bottom: 8px;\n-            \n+            @include h4;\n+            color: var(--primary);\n         }\n     }\n }\n \n"
+                },
+                {
+                    "date": 1731225484205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -256,9 +256,9 @@\n             color: var(--primary);\n         }\n \n         .name {\n-            margin-bottom: 8px;\n+            margin-bottom: 6px;\n             @include h4;\n             color: var(--primary);\n         }\n     }\n"
+                },
+                {
+                    "date": 1731225551700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -232,8 +232,10 @@\n     margin-top: 56px;\n }\n \n .ourtembox {\n+    margin-bottom: 32px;\n+\n     .imgwrap {\n         aspect-ratio: 1 / 1;\n         position: relative;\n         overflow: hidden;\n"
+                },
+                {
+                    "date": 1731225563202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -228,13 +228,13 @@\n \n }\n \n .teamrow {\n-    margin-top: 56px;\n+    margin-top: 24px;\n }\n \n .ourtembox {\n-    margin-bottom: 32px;\n+    margin-top: 32px;\n \n     .imgwrap {\n         aspect-ratio: 1 / 1;\n         position: relative;\n"
+                },
+                {
+                    "date": 1731225601372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -298,10 +298,12 @@\n         max-width: 50%;\n         flex: 0 0 50%;\n     }\n \n+    .ourtembox .description .name {\n+        font-size: 20px;\n+    }\n \n-\n     .containersectwrap .title,\n     .profabsections .title,\n     .ourinstagram__header .title {\n         font-size: 40px;\n"
+                },
+                {
+                    "date": 1731225609724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -300,8 +300,9 @@\n     }\n \n     .ourtembox .description .name {\n         font-size: 20px;\n+        line-height: 140%;\n     }\n \n     .containersectwrap .title,\n     .profabsections .title,\n"
+                },
+                {
+                    "date": 1731225622908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -298,11 +298,15 @@\n         max-width: 50%;\n         flex: 0 0 50%;\n     }\n \n-    .ourtembox .description .name {\n-        font-size: 20px;\n-        line-height: 140%;\n+    .ourtembox .description {\n+        padding-top: 10px;\n+\n+        .name {\n+            font-size: 20px;\n+            line-height: 120%;\n+        }\n     }\n \n     .containersectwrap .title,\n     .profabsections .title,\n"
+                },
+                {
+                    "date": 1731225734594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -466,5 +466,10 @@\n \n     .ourinstagram {\n         padding-bottom: 50px;\n     }\n+    \n+    .ourtembox .description .name {\n+        font-size: 16px;\n+    }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731225746229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -446,13 +446,15 @@\n     .profabsections .section-title {\n         margin-bottom: 20px;\n     }\n \n-    .profabsections .title, .ourinstagram__header .title {\n+    .profabsections .title,\n+    .ourinstagram__header .title {\n         font-size: 24px;\n     }\n \n-    .profabsections__cont .imgwrap, .profabsections__cont .contactblock {\n+    .profabsections__cont .imgwrap,\n+    .profabsections__cont .contactblock {\n         max-width: 100%;\n         flex: 0 0 100%;\n     }\n \n@@ -466,10 +468,16 @@\n \n     .ourinstagram {\n         padding-bottom: 50px;\n     }\n-    \n-    .ourtembox .description .name {\n-        font-size: 16px;\n+\n+    .ourtembox .description {\n+        p {\n+            font-size: 12px;\n+        }\n+\n+        .name {\n+            font-size: 16px;\n+        }\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731225753962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -470,14 +470,15 @@\n         padding-bottom: 50px;\n     }\n \n     .ourtembox .description {\n+        padding-top: 5px;\n         p {\n             font-size: 12px;\n         }\n \n         .name {\n-            font-size: 16px;\n+            font-size: 14px;\n         }\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731225773695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -471,14 +471,20 @@\n     }\n \n     .ourtembox .description {\n         padding-top: 5px;\n+\n         p {\n             font-size: 12px;\n         }\n \n         .name {\n             font-size: 14px;\n+            margin-bottom: 2px;\n         }\n     }\n \n+    .ourtembox {\n+        margin-top: 20px;\n+    }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731225784385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -486,5 +486,9 @@\n     .ourtembox {\n         margin-top: 20px;\n     }\n \n+    .teamrow {\n+        margin-top: 0;\n+    }\n+\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1731142551003,

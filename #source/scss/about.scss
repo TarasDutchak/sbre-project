@@ -228,6 +228,51 @@ ul.contlistgen {
 
 }
 
+.teamrow {
+    margin-top: 24px;
+}
+
+.ourtembox {
+    margin-top: 32px;
+
+    .imgwrap {
+        aspect-ratio: 1 / 1;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .description {
+        padding-top: 16px;
+
+        p {
+            margin: 0;
+            @include body2;
+            color: var(--primary);
+        }
+
+        .name {
+            margin-bottom: 6px;
+            @include h4;
+            color: var(--primary);
+        }
+    }
+}
+
+
+
+
+
+
+
+
 @media(max-width:1439.8px) {
 
 
@@ -254,7 +299,14 @@ ul.contlistgen {
         flex: 0 0 50%;
     }
 
+    .ourtembox .description {
+        padding-top: 10px;
 
+        .name {
+            font-size: 20px;
+            line-height: 120%;
+        }
+    }
 
     .containersectwrap .title,
     .profabsections .title,
@@ -395,11 +447,13 @@ ul.contlistgen {
         margin-bottom: 20px;
     }
 
-    .profabsections .title, .ourinstagram__header .title {
+    .profabsections .title,
+    .ourinstagram__header .title {
         font-size: 24px;
     }
 
-    .profabsections__cont .imgwrap, .profabsections__cont .contactblock {
+    .profabsections__cont .imgwrap,
+    .profabsections__cont .contactblock {
         max-width: 100%;
         flex: 0 0 100%;
     }
@@ -415,4 +469,26 @@ ul.contlistgen {
     .ourinstagram {
         padding-bottom: 50px;
     }
+
+    .ourtembox .description {
+        padding-top: 5px;
+
+        p {
+            font-size: 12px;
+        }
+
+        .name {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+    }
+
+    .ourtembox {
+        margin-top: 20px;
+    }
+
+    .teamrow {
+        margin-top: 0;
+    }
+
 }
