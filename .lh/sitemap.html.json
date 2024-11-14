@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 18,
             "patches": [
                 {
                     "date": 1730998839112,
@@ -68,6 +68,18 @@
                 {
                     "date": 1731229293284,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n             <li><a href=\"property-profile.html\" target=\"_blank\">Property Profile</a></li>\n             <li><a href=\"about.html\" target=\"_blank\">About</a></li>\n             <li><a href=\"about2.html\" target=\"_blank\">About v2</a></li>\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n+            <li><a href=\"article.html\" target=\"_blank\">Article</a></li>\n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1731596455454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,10 @@\n             <li><a href=\"property-profile.html\" target=\"_blank\">Property Profile</a></li>\n             <li><a href=\"about.html\" target=\"_blank\">About</a></li>\n             <li><a href=\"about2.html\" target=\"_blank\">About v2</a></li>\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n-            <li><a href=\"article.html\" target=\"_blank\">Article</a></li>\n+            <li><a href=\"article.html\" target=\"_blank\">Media Article</a></li>\n+            <li><a href=\"error.html\" target=\"_blank\">404</a></li>\n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1731597120573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n             <li><a href=\"about2.html\" target=\"_blank\">About v2</a></li>\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n             <li><a href=\"article.html\" target=\"_blank\">Media Article</a></li>\n             <li><a href=\"error.html\" target=\"_blank\">404</a></li>\n+            <li><a href=\"ty-popup.html\" target=\"_blank\">Form messages</a></li>\n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1731597131129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <li><a href=\"about2.html\" target=\"_blank\">About v2</a></li>\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n             <li><a href=\"article.html\" target=\"_blank\">Media Article</a></li>\n             <li><a href=\"error.html\" target=\"_blank\">404</a></li>\n-            <li><a href=\"ty-popup.html\" target=\"_blank\">Form messages</a></li>\n+            <li><a href=\"ty-popup.html\" target=\"_blank\">Form messages (Thank you popup)</a></li>\n         </ul>\n     </div>\n \n \n"
                 }
             ],
             "date": 1730998839112,
