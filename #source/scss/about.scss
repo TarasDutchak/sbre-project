@@ -266,8 +266,39 @@ ul.contlistgen {
     }
 }
 
+.descrbottext {
+    h4 {
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+}
 
+.showhidearr {
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    background: transparent;
+    outline: none;
+    border: none;
+   margin: 40px auto 0;
+   cursor: pointer;
+   transition: 0.3s;
 
+    img {
+        width: 100%;
+    }
+
+    &.open {
+        transform: rotate(-180deg);
+    }
+}
+
+.hiddenbox {
+    display: none;
+}
 
 
 
@@ -405,6 +436,12 @@ ul.contlistgen {
     .ourinstagram .instagramimg {
         border-radius: 8px;
     }
+
+    .descrbottext h4 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:575.8px) {
@@ -491,4 +528,15 @@ ul.contlistgen {
         margin-top: 0;
     }
 
+    .showhidearr {
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .descrbottext h4 {
+        font-size: 21px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }

@@ -257,6 +257,10 @@ $(document).ready(function () {
         $(this).parents('.modalwrapper').fadeOut();
     })
     
+    $('.showhidearr').click(function(){
+        $(this).toggleClass('open');
+        $(this).parent('.descrbottext').find('.hiddenbox').toggle()
+    })
 
 
 
