@@ -256,14 +256,29 @@ img {
   transition: 0.3s;
   -webkit-filter: brightness(0);
           filter: brightness(0);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #0D0D0D;
 }
 .leftsoclist li a img {
-  width: 24px;
   vertical-align: top;
+  max-width: 15px;
+  max-height: 12px;
 }
 .leftsoclist li a:hover {
   -webkit-filter: brightness(1);
           filter: brightness(1);
+  border: 1px solid #6B3BAB;
 }
 
 .languagelist {
@@ -2474,7 +2489,7 @@ ul.contlistgen li .rightinfo a:hover {
   background: rgba(61, 55, 67, 0.96);
   padding: 12px;
   border-radius: 12px;
-  min-height: 147px;
+  height: 147px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2546,7 +2561,7 @@ ul.contlistgen li .rightinfo a:hover {
   margin-bottom: 56px;
 }
 .media-features__wrap .mediabox .mediabox__descr {
-  min-height: 65px;
+  height: 65px;
 }
 .media-features__wrap .mediabox .info .title {
   margin-bottom: 0;
@@ -3015,6 +3030,18 @@ header.header nav ul li a:hover::after {
   display: none;
 }
 
+.header__mobelems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media (max-width: 1439.8px) {
   header.header {
     height: 75px;
@@ -3064,11 +3091,7 @@ header.header nav ul li a:hover::after {
   }
   button.burger {
     display: block;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 25px;
+    position: relative;
     width: 27px;
     height: 18px;
     border: none;
@@ -3076,7 +3099,7 @@ header.header nav ul li a:hover::after {
     z-index: 15;
     cursor: pointer;
     padding: 0;
-    margin: 0 0 0 auto;
+    margin: 0;
   }
   button.burger:focus {
     outline: none;
@@ -3158,8 +3181,17 @@ header.header nav ul li a:hover::after {
   .header__logo {
     display: inline-block;
   }
-  .header__logo img {
-    width: 120px;
+  .header__logo.v1 img {
+    width: 60px;
+    vertical-align: top;
+  }
+  .header__logo.v2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .header__logo.v2 img {
+    width: 60px;
     vertical-align: top;
   }
   .header__mobelems {
@@ -3207,6 +3239,24 @@ header.header nav ul li a:hover::after {
   }
   .header__bottombox .leftsoclist li a img {
     width: 30px;
+  }
+}
+@media (max-width: 575.8px) {
+  .header__logo {
+    display: inline-block;
+  }
+  .header__logo.v1 img {
+    width: 40px;
+    vertical-align: top;
+  }
+  .header__logo.v2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .header__logo.v2 img {
+    width: 60px;
+    vertical-align: top;
   }
 }
 .footer {

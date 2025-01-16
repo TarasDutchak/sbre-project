@@ -79,14 +79,23 @@
         a {
             transition: 0.3s;
             filter: brightness(0);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid #0D0D0D;
 
             img {
-                width: 24px;
                 vertical-align: top;
+                max-width: 15px;
+                max-height: 12px;
             }
 
             &:hover {
                 filter: brightness(1);
+                border: 1px solid #6B3BAB;
             }
         }
     }

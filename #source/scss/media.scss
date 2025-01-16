@@ -33,7 +33,7 @@
         background: rgba(61, 55, 67, 0.96);
         padding: 12px;
         border-radius: 12px;
-        min-height: 147px;
+        height: 147px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -100,7 +100,7 @@
     }
 
     .mediabox .mediabox__descr {
-        min-height: 65px;
+        height: 65px;
     }
 
     .mediabox .info .title {
