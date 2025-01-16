@@ -46,6 +46,8 @@
 }
 
 .articlesection {
+    padding-bottom: 60px;
+
     article {
         font-size: 16px;
         line-height: 170%;
@@ -144,6 +146,10 @@
 
     .articlesection article h6 {
         font-size: 16px;
+    }
+
+    .articlesection {
+        padding-bottom: 40px;
     }
 }
 

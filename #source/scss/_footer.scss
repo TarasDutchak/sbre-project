@@ -129,13 +129,16 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+
+            .footform__mail-wrap {
+                max-width: calc(100% - 134px);
+                flex: 0 0 calc(100% - 134px);
+            }
 
             .footform__mail {
                 height: 50px;
                 width: 100%;
-                max-width: calc(100% - 134px);
-                flex: 0 0 calc(100% - 134px);
                 border-radius: 16px;
                 background: #48484A;
                 padding-left: 12px;

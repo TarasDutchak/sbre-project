@@ -2761,6 +2761,9 @@ ul.contlistgen li .rightinfo a:hover {
           transform: translateY(-50%);
 }
 
+.articlesection {
+  padding-bottom: 60px;
+}
 .articlesection article {
   font-size: 16px;
   line-height: 170%;
@@ -2853,6 +2856,9 @@ ul.contlistgen li .rightinfo a:hover {
   }
   .articlesection article h6 {
     font-size: 16px;
+  }
+  .articlesection {
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 575.8px) {
@@ -3389,17 +3395,19 @@ header.header nav ul li a:hover::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.footer .footer__right .footform .footform__mail {
-  height: 50px;
-  width: 100%;
+.footer .footer__right .footform .footform__mail-wrap {
   max-width: calc(100% - 134px);
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(100% - 134px);
           flex: 0 0 calc(100% - 134px);
+}
+.footer .footer__right .footform .footform__mail {
+  height: 50px;
+  width: 100%;
   border-radius: 16px;
   background: #48484A;
   padding-left: 12px;
