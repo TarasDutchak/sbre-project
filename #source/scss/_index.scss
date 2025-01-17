@@ -1428,7 +1428,9 @@
         padding-bottom: 50px;
     }
 
-
+    .welcomesection .imgwrap {
+        max-height: calc(100vh - 100px);
+    }
 
     .objectcard__info-header .title {
         font-size: 18px;

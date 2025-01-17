@@ -105,9 +105,17 @@
             <div class="containersect">
                 <div class="imgwrap">
                     <!-- <img src="img/main/heroimg.png" alt="img"> -->
-                    <video autoplay="" muted="" loop="">
+                    <!-- <video autoplay="" muted="" loop="">
                         <source src="video/video.mp4" type="video/mp4">
-                    </video>
+                    </video> -->
+
+                    <video autoplay="" muted="" loop="">
+                        <!-- Відео для екранів 575px і менше -->
+                        <source src="video/video-mob.mov" type="video/mp4" media="(max-width: 575px)">
+                        <!-- Відео для екранів більше 575px -->
+                        <source src="video/video.mp4" type="video/mp4">
+                      </video>
+
                 </div>
             </div>
             <a href="#scrollsect" class="welcomesection__scrollarr">

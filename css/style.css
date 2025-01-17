@@ -1565,6 +1565,9 @@ img {
   .contactsection {
     padding-bottom: 50px;
   }
+  .welcomesection .imgwrap {
+    max-height: calc(100vh - 100px);
+  }
   .objectcard__info-header .title {
     font-size: 18px;
   }
@@ -3292,7 +3295,7 @@ header.header nav ul li a:hover::after {
   margin-bottom: 16px;
 }
 .footer .footer__left .footer__logo img {
-  max-width: 124px;
+  max-width: 128px;
   width: 100%;
   vertical-align: top;
 }
@@ -3307,6 +3310,7 @@ header.header nav ul li a:hover::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 128px;
   padding-left: 8px;
 }
 .footer .footer__left ul li a {
@@ -3337,10 +3341,10 @@ header.header nav ul li a:hover::after {
 }
 .footer .footer__center {
   width: 100%;
-  max-width: 422px;
+  max-width: 440px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 422px;
-          flex: 0 0 422px;
+      -ms-flex: 0 0 440px;
+          flex: 0 0 440px;
 }
 .footer .footer__center .footermenu {
   list-style-type: none;
@@ -3372,6 +3376,16 @@ header.header nav ul li a:hover::after {
 }
 .footer .footer__center .footermenu li a:hover::after {
   width: 100%;
+}
+.footer .footer__center .footermenu li:nth-child(1), .footer .footer__center .footermenu li:nth-child(4) {
+  width: 83px;
+}
+.footer .footer__center .footermenu li:nth-child(2), .footer .footer__center .footermenu li:nth-child(5) {
+  width: 100px;
+}
+.footer .footer__center .footermenu li:nth-child(3), .footer .footer__center .footermenu li:nth-child(6) {
+  width: 168px;
+  margin-right: 0;
 }
 .footer .footer__right {
   width: 100%;
@@ -3474,12 +3488,6 @@ header.header nav ul li a:hover::after {
     margin-bottom: 30px;
     margin-right: 20px;
   }
-  .footer .footer__center {
-    max-width: 360px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 360px;
-            flex: 0 0 360px;
-  }
   .footer .footer__right .footform .footform__submit {
     border-radius: 8px;
   }
@@ -3510,6 +3518,9 @@ header.header nav ul li a:hover::after {
   .footer .footer__center .footermenu {
     max-width: 400px;
     display: inline-block;
+  }
+  .footer .footer__center li {
+    text-align: left;
   }
 }
 @media (max-width: 767.8px) {
