@@ -253,15 +253,25 @@ $(document).ready(function () {
         });
     }
 
-    $('.closety').click(function(){
+    $('.closety').click(function () {
         $(this).parents('.modalwrapper').fadeOut();
     })
-    
-    $('.showhidearr').click(function(){
+
+    $('.showhidearr').click(function () {
         $(this).toggleClass('open');
         $(this).parent('.descrbottext').find('.hiddenbox').toggle()
     })
 
+    // 10 символів обмеження
+    $('.numeric-input').each(function () {
+        $(this).on('input', function () {
+            if ($(this).val().length > 10) {
+                $(this).val($(this).val().slice(0, 10));
+            }
+        });
+    });
 
+
+    
 
 })
