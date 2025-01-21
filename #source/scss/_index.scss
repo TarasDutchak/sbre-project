@@ -1287,6 +1287,10 @@
             flex: 0 0 100%;
         }
     }
+
+    .filter-section__header ul li button {
+        min-width: 100px;
+    }
 }
 
 @media(max-width:575.8px) {
@@ -1296,14 +1300,15 @@
 
         li {
             width: 100%;
-            max-width: 25%;
-            flex: 0 0 25%;
+            max-width: 20%;
+            flex: 0 0 20%;
 
             button {
                 width: 100%;
                 padding: 0;
                 height: auto;
                 min-width: initial;
+                font-size: 15px;
             }
         }
     }
