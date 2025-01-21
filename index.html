@@ -114,7 +114,7 @@
                         <source src="video/video-mob.mov" type="video/mp4" media="(max-width: 575px)">
                         <!-- Відео для екранів більше 575px -->
                         <source src="video/video.mp4" type="video/mp4">
-                      </video>
+                    </video>
 
                 </div>
             </div>
@@ -279,10 +279,21 @@
                                 </div>
                             </div>
                             <div class="fscontent__loc">
-                                <p>
+                                <!-- <p>
                                     <img src="img/general/loc-icon.svg" alt="img">
                                     Location
-                                </p>
+                                </p> -->
+                                <div class="styledselect__wrap location-select">
+                                    <select name="" id="" class="styledselect" data-placeholder="Location">
+                                        <option></option>
+                                        <option value="1">Any</option>
+                                        <option value="2">Apartment</option>
+                                        <option value="3">Villa</option>
+                                        <option value="4">Townhouse</option>
+                                        <option value="5">Penthouse</option>
+                                        <option value="6">Townhouse</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="fscontent__btn">
                                 <input type="submit" value="Search">
@@ -713,7 +724,7 @@
                 <div class="footform__mail-wrap">
                     <input type="text" placeholder="Email" class="footform__mail">
                 </div>
-                
+
                 <input type="submit" value="Subscribe" class="footform__submit">
             </form>
 
